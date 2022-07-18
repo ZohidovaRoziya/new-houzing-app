@@ -9,7 +9,7 @@ const getType = (type) => {
             };
         case 'primary':
             return {
-                background: "#0061gf",
+                backgroundColor: "#0061DF",
                 border: "none",
                 color: "#fff"
             };
@@ -29,7 +29,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
-
 justify-content: center;
 align-items: center;
 height: ${({height}) => height || "44px"};
