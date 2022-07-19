@@ -6,6 +6,7 @@ import { ReactComponent as SearchIcon } from "../../assets/icons/loupe-icon.svg"
 export const Wrapper = styled.div`
 display: flex;
 align-items: center;
+justify-content: center;
 width: 100%;
 padding: var(--padding);
 `;
