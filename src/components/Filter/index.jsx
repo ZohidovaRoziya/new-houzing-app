@@ -33,22 +33,28 @@ export const Filter = () => {
   return (
     <Wrapper>
       <Container>
-        <Input type="text" pl={"50px"} placeholder={"Enter an address, neighborhood, city, or ZIP code"} >
+        <Input
+          type="text"
+          pl={"50px"}
+          placeholder={"Enter an address, neighborhood, city, or ZIP code"}
+        >
           <Icons.HomeIcon />
         </Input>
-        <Popover placement="bottomRight" content={content} trigger="click">
-          <Button type={"secondary"} width={"131px"}>
-            <Icons.AdvensedIcon />
-            Advensed
-          </Button>
-        </Popover>
-        <Button type={"primary"} width={"180px"}>
-          <Icons.SearchIcon />
-          Search
-        </Button>
+        <div className="btnlar">
+          <Popover placement="bottomRight" content={content} trigger="click">
+            <Button type={"secondary"} width={"131px"}>
+              <Icons.AdvensedIcon />
+              Advensed
+            </Button>
+          </Popover>
+            <Button type={"primary"} width={"180px"}>
+              <Icons.SearchIcon />
+              Search
+            </Button>
+        </div>
       </Container>
     </Wrapper>
-  )
+  );
 }
 
 export default Filter

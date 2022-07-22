@@ -11,14 +11,15 @@ export const Carousel = () => {
       <Icon.Left onClick={() => slider.current?.next()} />
       <Icon.Right onClick={() => slider.current?.prev()} />
       <MainCarousel ref={slider} dots autoplay>
-          <Img src={img1} alt="rasm" />
-          <Img src={img2} alt="rasm" />
-          <Img src={img1} alt="rasm" />
-          <Img src={img2} alt="rasm" />
-          <Img src={img1} alt="rasm" />
+        <Img src={img1} alt="rasm" />
+        <Img src={img2} alt="rasm" />
+        <Img src={img1} alt="rasm" />
+        <Img src={img2} alt="rasm" />
+        <Img src={img1} alt="rasm" />
+        <Img src={img1} alt="rasm" />
       </MainCarousel>
     </CarouselWrapper>
-  )
+  );
 }
 
 export default Carousel

@@ -46,14 +46,14 @@ margin-bottom: ${({mb}) => `${mb}px`};
 `;
 
 export const Wrapper = styled.div`
-display: flex;
-position: relative;
-width: 100%;
-color: black;
-margin-right: ${({mr}) => `${mr}px`};
-margin-left: ${({ml}) => `${ml}px`};
-margin-top: ${({mt}) => `${mt}px`};
-margin-bottom: ${({mb}) => `${mb}px`};
+  display: flex;
+  position: relative;
+  width: 100%;
+  color: black;
+  margin-right: ${({ mr }) => `${mr}px`};
+  margin-left: ${({ ml }) => `${ml}px`};
+  margin-top: ${({ mt }) => `${mt}px`};
+  margin-bottom: ${({ mb }) => `${mb}px`};
 `;
 
 export const Icon = styled.div`

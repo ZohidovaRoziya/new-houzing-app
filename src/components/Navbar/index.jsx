@@ -3,6 +3,8 @@ import { navbar } from "../../utils/navbar"
 import { Outlet, useNavigate } from "react-router-dom"
 import { Container, Link, Logo, NavbarBody, NavbarWrapper, Wrapper } from './styles'
 import Button from '../Generic/Button'
+import {ReactComponent as Bars} from "../../assets/icons/nav.svg"
+import {ReactComponent as User} from "../../assets/icons/user.svg"
 export const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -10,8 +12,10 @@ export const Navbar = () => {
       <Container>
         <NavbarWrapper>
           <Logo onClick={() => navigate("/home")}>
-            <Logo.Icon />
+            <Bars className='mobile'/>
+            
           </Logo>
+          <Logo.Icon />
           <NavbarBody>
             {navbar.map(({ id, path, title, hidden }) => {
                 return (
@@ -21,7 +25,8 @@ export const Navbar = () => {
                 );
               })}
           </NavbarBody>
-          <Button onClick={()=> {navigate("/home")}} width="120px">Log Out</Button>
+          <div id="btn"><Button onClick={() => { navigate("/home") }} width="120px">Log Out</Button></div>
+          <User className='mobile' />
         </NavbarWrapper>
       </Container>
       <Outlet/>
