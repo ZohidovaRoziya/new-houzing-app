@@ -42,15 +42,15 @@ export const Filter = () => {
         </Input>
         <div className="btnlar">
           <Popover placement="bottomRight" content={content} trigger="click">
-            <Button type={"secondary"} width={"131px"}>
+            <Button type={"secondary"} mr={"20"} width={"131px"}>
               <Icons.AdvensedIcon />
               Advensed
             </Button>
           </Popover>
-            <Button type={"primary"} width={"180px"}>
-              <Icons.SearchIcon />
-              Search
-            </Button>
+          <Button type={"primary"} width={"180px"}>
+            <Icons.SearchIcon />
+            Search
+          </Button>
         </div>
       </Container>
     </Wrapper>
